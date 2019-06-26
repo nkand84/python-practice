@@ -16,3 +16,17 @@ print(cars['benz']['year'])
 
 # to get the model num of bmw
 print(cars['bmw']['model']['model-num'])
+
+print("*"*50)
+
+# arrays
+
+cars = ["benz","porsche","volvo","ferrari","volvo"]
+print(cars)
+
+# diff methods on lists (lists are arrays in python)
+print(len(cars))
+# remove method can only remove the first instance of item 
+# cars.remove("volvo")
+cars.pop(4)
+print(cars)
