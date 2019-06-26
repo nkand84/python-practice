@@ -6,11 +6,11 @@ def my_function():
 my_function()
 
 # function with paramaters
-def my_func(fname = "Nishanth"):
-    print(fname + " Akula")
+def my_func(fname = "John"):
+    print(fname + " Abraham")
 
-my_func("Nithya")
-my_func("Sreshta")
+my_func("Mickey")
+my_func("Samuel")
 my_func()
 print("==========================================")
 

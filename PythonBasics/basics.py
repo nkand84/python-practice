@@ -1,4 +1,4 @@
-print("hello nithya")
+print("hello nk")
 
 x = 5
 y = 15
@@ -20,7 +20,7 @@ print("really ignoring you now??")
 
 """
 
-a = " Hello, Nithya! "
+a = " Hello! "
 print(a.strip())
 
 print(len(a))
