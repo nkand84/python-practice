@@ -37,6 +37,50 @@ class Cars:
         print("You have a "+ self.brand + " " + self.model + " " + str(self.year) + " car")
 # new instance of class i.e create a new object
 c1 = Cars("acura","MDX",2015)
+# to modify object property
+c1.year = 2017
 # print(c1.year)
 # calling method of the object
 c1.myCars()
+
+print("="*50)
+# create a person class with 2 properties and 1 method
+class Person:
+    def __init__(self,fname,lname,age):
+        self.fname = fname
+        self.lname = lname
+        self.age = age
+    def myPersonFunc(self):
+        print("My name is " + " " + self.fname + " " + self.lname + " " + "and I am " + " " + str(self.age)+ " " + "years old")
+p1 = Person("Jack","Doe",30)
+p2 = Person("Mary","Williams",28)
+p1.myPersonFunc()
+p2.myPersonFunc()
+
+print("="*50)
+# create a child class that inherits the properties and methods of parent class
+# pass the parent class as an arg
+# use "pass" if u dont have any properties to be added
+class Student(Person):
+    pass
+s1 = Student("Mike","Doe",20)
+s1.myPersonFunc()
+
+# create a cars class
+cars_list = []
+class Cars:
+    def __init__(self,brand,model,year):
+        self.brand = brand
+        self.model = model
+        self.year = year
+    def myCarsFunc(self):
+        print(" This car is " + self.brand)
+c1 = Cars("Acura","MDX",2015)
+c2 = Cars("Benz","S-class",2010)
+c3 = Cars("BMW","x3",2014)
+cars_list.append(c1.brand)
+cars_list.append(c2.brand)
+cars_list.append(c3.brand)
+c1.myCarsFunc()
+print(cars_list)
+
